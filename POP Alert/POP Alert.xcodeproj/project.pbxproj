@@ -11,6 +11,15 @@
 		CEDD3AD02A9685E100661031 /* POP_Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDD3AC52A9685E100661031 /* POP_Alert.framework */; };
 		CEDD3AD52A9685E100661031 /* POP_AlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3AD42A9685E100661031 /* POP_AlertTests.swift */; };
 		CEDD3AD62A9685E100661031 /* POP_Alert.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDD3AC82A9685E100661031 /* POP_Alert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEDD3B212A96866800661031 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B202A96866800661031 /* AlertType.swift */; };
+		CEDD3B232A96875700661031 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B222A96875700661031 /* Alert.swift */; };
+		CEDD3B252A968BDA00661031 /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B242A968BDA00661031 /* ButtonType.swift */; };
+		CEDD3B272A968BE800661031 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B262A968BE800661031 /* AlertButton.swift */; };
+		CEDD3B292A968C1000661031 /* AlertSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B282A968C1000661031 /* AlertSheet.swift */; };
+		CEDD3B2B2A968CE100661031 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B2A2A968CE100661031 /* CustomAlert.swift */; };
+		CEDD3B2D2A96AE7700661031 /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B2C2A96AE7700661031 /* CustomAlertController.swift */; };
+		CEDD3B2F2A96AE8F00661031 /* CustomAlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B2E2A96AE8F00661031 /* CustomAlertProtocol.swift */; };
+		CEDD3B312A96AEAF00661031 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD3B302A96AEAF00661031 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,15 @@
 		CEDD3AC92A9685E100661031 /* POP_Alert.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = POP_Alert.docc; sourceTree = "<group>"; };
 		CEDD3ACF2A9685E100661031 /* POP AlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POP AlertTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDD3AD42A9685E100661031 /* POP_AlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POP_AlertTests.swift; sourceTree = "<group>"; };
+		CEDD3B202A96866800661031 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		CEDD3B222A96875700661031 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		CEDD3B242A968BDA00661031 /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
+		CEDD3B262A968BE800661031 /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
+		CEDD3B282A968C1000661031 /* AlertSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSheet.swift; sourceTree = "<group>"; };
+		CEDD3B2A2A968CE100661031 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		CEDD3B2C2A96AE7700661031 /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
+		CEDD3B2E2A96AE8F00661031 /* CustomAlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertProtocol.swift; sourceTree = "<group>"; };
+		CEDD3B302A96AEAF00661031 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				CEDD3AC82A9685E100661031 /* POP_Alert.h */,
+				CEDD3B352A96AEDA00661031 /* Protocols */,
+				CEDD3B342A96AED100661031 /* Alert */,
+				CEDD3B332A96AEC800661031 /* AlertSheet */,
+				CEDD3B322A96AEC200661031 /* CustomAlert */,
 				CEDD3AC92A9685E100661031 /* POP_Alert.docc */,
 			);
 			path = "POP Alert";
@@ -83,6 +105,43 @@
 				CEDD3AD42A9685E100661031 /* POP_AlertTests.swift */,
 			);
 			path = "POP AlertTests";
+			sourceTree = "<group>";
+		};
+		CEDD3B322A96AEC200661031 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD3B2A2A968CE100661031 /* CustomAlert.swift */,
+				CEDD3B302A96AEAF00661031 /* CustomAlertView.swift */,
+				CEDD3B2C2A96AE7700661031 /* CustomAlertController.swift */,
+				CEDD3B2E2A96AE8F00661031 /* CustomAlertProtocol.swift */,
+			);
+			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		CEDD3B332A96AEC800661031 /* AlertSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD3B282A968C1000661031 /* AlertSheet.swift */,
+			);
+			path = AlertSheet;
+			sourceTree = "<group>";
+		};
+		CEDD3B342A96AED100661031 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD3B222A96875700661031 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		CEDD3B352A96AEDA00661031 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD3B202A96866800661031 /* AlertType.swift */,
+				CEDD3B242A968BDA00661031 /* ButtonType.swift */,
+				CEDD3B262A968BE800661031 /* AlertButton.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDD3B312A96AEAF00661031 /* CustomAlertView.swift in Sources */,
+				CEDD3B272A968BE800661031 /* AlertButton.swift in Sources */,
+				CEDD3B232A96875700661031 /* Alert.swift in Sources */,
+				CEDD3B252A968BDA00661031 /* ButtonType.swift in Sources */,
+				CEDD3B212A96866800661031 /* AlertType.swift in Sources */,
+				CEDD3B292A968C1000661031 /* AlertSheet.swift in Sources */,
+				CEDD3B2F2A96AE8F00661031 /* CustomAlertProtocol.swift in Sources */,
+				CEDD3B2D2A96AE7700661031 /* CustomAlertController.swift in Sources */,
 				CEDD3ACA2A9685E100661031 /* POP_Alert.docc in Sources */,
+				CEDD3B2B2A968CE100661031 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +464,7 @@
 		CEDD3ADD2A9685E100661031 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26VQM6YHFT;
@@ -412,6 +481,7 @@
 		CEDD3ADE2A9685E100661031 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26VQM6YHFT;
