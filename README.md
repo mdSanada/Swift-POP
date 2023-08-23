@@ -14,6 +14,7 @@ let alert = Alert(title: "Alert Title",
 
 alert.show()
 ```
+<img src="https://github.com/mdSanada/Swift-POP/blob/development/POP_Alert.gif" width="428"/>
 
 ### Displaying an Action Sheet
 
